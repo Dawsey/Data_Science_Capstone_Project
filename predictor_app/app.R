@@ -44,9 +44,14 @@ ui <- fluidPage(
             
             textAreaInput("caption", "Enter your words here:", value = "Once upon a time", width = NULL, height = NULL,
                           cols = NULL, rows = 1, placeholder = NULL, resize = "vertical"),
-            div(style="display:inline-block", uiOutput("my_button_1")),
+            #div(style="display:inline-block", uiOutput("my_button_1")),
+            h5("Recommended Prediction"),
+            uiOutput("my_button_1"),
+            h5("Alternative Suggestions"),
             div(style="display:inline-block", uiOutput("my_button_2")),
+            div(style="display:inline-block", p("or")),
             div(style="display:inline-block", uiOutput("my_button_3")),
+            div(style="display:inline-block", p("or")),
             div(style="display:inline-block", uiOutput("my_button_4")),
         )
     )
