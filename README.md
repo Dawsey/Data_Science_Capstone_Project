@@ -1,7 +1,4 @@
 ---
-title: "Coursera Word Prediction Capstone Project"
-author: "Nick"
-date: "14/01/2020"
 output: 
   html_document: 
     keep_md: yes
